@@ -7,14 +7,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        ultra: ['Ultra'],
         mons: ['Montserrat'],
-        gabarito: ['Gabarito'],
       },
     },
     colors: {
+      black: "#000000",
       bg: "#292827",
       primary: "#F9f7e4",
-      secondary: "#097351",
+      secondary: "#7b0005",
     },
   },
   
