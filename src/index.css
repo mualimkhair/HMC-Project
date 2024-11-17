@@ -5,6 +5,5 @@
 @tailwind utilities;
 
 body {
-    z-index: -999;
     background-color: #292827;
 }

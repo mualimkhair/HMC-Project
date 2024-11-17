@@ -16,6 +16,7 @@ export default {
       bg: "#292827",
       primary: "#F9f7e4",
       secondary: "#7b0005",
+      white: "#ffffff",
     },
   },
   

@@ -1,15 +1,16 @@
 import { ShoppingCart } from "@phosphor-icons/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ItemList = ({ item = [] }) => {
   return (
-    <div className="grid grid-cols-6 gap-4 text-bg">
+    <div className="flex flex-wrap text-bg">
       {item.map((item) => {
-        const { id, title, price, category, image } = item;
+        const { id, title, price, image } = item;
         return (
-          <div className="grid gap-2">
-            <div className="bg-primary rounded-md w-44 h-60 flex flex-col justify-between relative">
-              <img src={image} alt="" className="h-60 w-full rounded-md" />
+          <Link to={`/itemList/${id}`} className="grid gap-2 m-1">
+            <div className="bg-white rounded-md w-60 h-60 flex flex-col justify-between relative ">
+              <img src={image} alt="" className="object-contain h-full block rounded-md" />
               <div className="absolute bottom-0 bg-primary w-full rounded-md">
                 <h3>{title}</h3>
                 <p className="bg-secondary text-primary text-center">${price}</p>
@@ -19,7 +20,7 @@ const ItemList = ({ item = [] }) => {
               Tambahkan
               <ShoppingCart size={32} />
             </button>
-          </div>
+          </Link>
         );
       })}
     </div>
