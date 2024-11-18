@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import colors from "tailwindcss/colors";
 export default {
   content: [
     "./index.html",
@@ -12,6 +13,7 @@ export default {
       },
     },
     colors: {
+      ...colors,
       black: "#000000",
       bg: "#292827",
       primary: "#F9f7e4",
