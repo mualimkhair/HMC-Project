@@ -2,10 +2,11 @@ import React from "react";
 
 const Cart = () => {
   const carts = JSON.parse(localStorage.getItem("cart")) || [];
+  
 
   if (!carts?.length) <div>Keranjang Kosong</div>;
   return (
-    <div className="bg-gray-100 h-screen py-8">
+    <div className="bg-gray-full h-screen py-8">
       <div className="container mx-auto px-4">
         <h1 className="text-2xl font-semibold mb-4 text-primary">Shopping Cart</h1>
         <h2 className="text-xl font-semibold mb-4 text-primary">{carts?.length} Items</h2>
@@ -27,9 +28,9 @@ const Cart = () => {
                     <tbody>
                       <tr>
                         <td className="py-4">
-                          <div className="flex items-center">
+                          <div className="flex items-center" onClick={() => handleItem(redirect)}>
                             <img className="h-16 w-16 mr-4" src={cart?.image} alt="Product image" />
-                            <span className="font-semibold">{cart?.title}</span>
+                            <span className="font-semibold truncate w-16">{cart?.title}</span>
                           </div>
                         </td>
                         <td className="py-4">${cart?.price}</td>
