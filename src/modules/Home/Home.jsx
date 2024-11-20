@@ -25,6 +25,7 @@ const Home = () => {
           <ItemList />
         </div>
       </div>
+      
     </>
   );
 };
