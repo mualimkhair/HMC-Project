@@ -1,10 +1,11 @@
 import React from "react";
-import Home from "./modules/Home/Home.jsx";
+import Home from "./modules/Home/index.jsx";
 import Cart from "./Cart.jsx";
 import { Routes, Route } from "react-router-dom";
-import Item from "./modules/Item/Item.jsx";
+import Item from "./modules/Item/index.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Footer from "./modules/Footer/Footer.jsx";
+import Search from "./modules/Search/index.jsx";
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Cart" element={<Cart />} />
         <Route path="/itemlist/:id" element={<Item />} />
-      </Routes>
+        <Route path= "/modules/Search" element={<Search />} />
+     </Routes>
       <Footer />
     </>
   );

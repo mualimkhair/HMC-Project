@@ -10,11 +10,11 @@ const Footer = () => {
 
       <span class="block text-sm text-center text-primary">
         © 2023-2024 HMC-Palu™. All Rights Reserved. Built with 
-        <a href="https://react.dev/" class="text-red-600 hover:underline">
+        <a href="https://react.dev/" class="text-secondary hover:underline">
           React
         </a>{" "}
         and 
-        <a href="https://tailwindcss.com" class="text-red-600 hover:underline">
+        <a href="https://tailwindcss.com" class="text-secondary hover:underline">
           Tailwind CSS
         </a>
         .
