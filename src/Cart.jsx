@@ -19,7 +19,7 @@ const Cart = () => {
 
   return (
     <div className="h-screen py-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-3">
         <h1 className="text-2xl font-semibold mb-4 text-primary">Shopping Cart</h1>
         <h2 className="text-xl font-semibold mb-4 text-primary">{carts?.length} Items</h2>
         <div className="flex flex-col md:flex-row gap-4">
