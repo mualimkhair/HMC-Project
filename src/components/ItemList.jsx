@@ -2,7 +2,7 @@ import { ShoppingCart, Star } from "@phosphor-icons/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ItemList = ({ item }) => {
+const ItemList = ({ item = [] }) => {
   return (
     <div className="flex flex-wrap text-bg">
       {item?.map((item) => {
