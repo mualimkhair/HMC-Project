@@ -20,15 +20,13 @@ const Home = () => {
     <>
       <div className="flex">
         <Side />
-
         <div className="mt-8 ml-8 ">
-          {/* <Carousel /> */}
+          {items.length > 0 ? <Carousel item={items} /> : <div className="text-red-600">loading...</div>}
           <h1 className="text-secondary font-bold text-4xl mb-8">Beranda</h1>
           {items.length > 0 ? <ItemList item={items} /> : <div className="text-red-600">loading...</div>}
           <ItemList />
         </div>
       </div>
-      
     </>
   );
 };
